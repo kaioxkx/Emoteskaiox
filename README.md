@@ -100,12 +100,12 @@ end
 RunService:BindToRenderStep("UpdateList", 0, Update);
 
 local TitleSettings = {
-	Font = Enum.Font.FredoKaOne;
+	Font = Enum.Font.GothamSemibold;
 	Size = 14;
 }
 
 local DescriptionSettings = {
-	Font = Enum.Font.FredokaOne;
+	Font = Enum.Font.Gotham;
 	Size = 14;
 }
 
@@ -114,7 +114,7 @@ local MaxWidth = (Container.AbsoluteSize.X - Padding - DescriptionPadding);
 local function Label(Text, Font, Size, Button)
 	local Label = Instance.new(string.format("Text%s", Button and "Button" or "Label"));
 	Label.Text = Text;
-	Label.Font = FredokaOne
+	Label.Font = Font;
 	Label.TextSize = Size;
 	Label.BackgroundTransparency = 1;
 	Label.TextXAlignment = Enum.TextXAlignment.Left;
