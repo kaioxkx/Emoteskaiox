@@ -37,7 +37,7 @@ local function Round2px()
 	local NewImage = Image("http://www.roblox.com/asset/?id=5761488251");
 	NewImage.ScaleType = Enum.ScaleType.Slice;
 	NewImage.SliceCenter = Rect.new(2, 2, 298, 298);
-	NewImage.ImageColor3 = Color3.fromRGB(106, 43, 217);
+	NewImage.ImageColor3 = Color3.fromRGB(12, 4, 20);
 	NewImage.ImageTransparency = 0.14
 	return NewImage;
 end
@@ -48,7 +48,7 @@ local function Shadow2px()
 	NewImage.SliceCenter = Rect.new(17, 17, 283, 283);
 	NewImage.Size = UDim2.fromScale(1, 1) + UDim2.fromOffset(30, 30);
 	NewImage.Position = -UDim2.fromOffset(15, 15);
-	NewImage.ImageColor3 = Color3.fromRGB(26, 26, 26);
+	NewImage.ImageColor3 = Color3.fromRGB(106, 43, 217);
 	return NewImage;
 end
 
@@ -100,12 +100,12 @@ end
 RunService:BindToRenderStep("UpdateList", 0, Update);
 
 local TitleSettings = {
-	Font = Enum.Font.GothamSemibold;
+	Font = Enum.Font.FredoKaOne;
 	Size = 14;
 }
 
 local DescriptionSettings = {
-	Font = Enum.Font.Gotham;
+	Font = Enum.Font.FredoKaOne;
 	Size = 14;
 }
 
