@@ -37,7 +37,7 @@ local function Round2px()
 	local NewImage = Image("http://www.roblox.com/asset/?id=5761488251");
 	NewImage.ScaleType = Enum.ScaleType.Slice;
 	NewImage.SliceCenter = Rect.new(2, 2, 298, 298);
-	NewImage.ImageColor3 = Color3.fromRGB(12, 4, 20);
+	NewImage.ImageColor3 = Color3.fromRGB(106, 43, 217);
 	NewImage.ImageTransparency = 0.14
 	return NewImage;
 end
@@ -100,12 +100,12 @@ end
 RunService:BindToRenderStep("UpdateList", 0, Update);
 
 local TitleSettings = {
-	Font = Enum.Font.GothamSemibold;
+	Font = Enum.Font.FredoKaOne;
 	Size = 14;
 }
 
 local DescriptionSettings = {
-	Font = Enum.Font.Gotham;
+	Font = Enum.Font.FredokaOne;
 	Size = 14;
 }
 
@@ -114,7 +114,7 @@ local MaxWidth = (Container.AbsoluteSize.X - Padding - DescriptionPadding);
 local function Label(Text, Font, Size, Button)
 	local Label = Instance.new(string.format("Text%s", Button and "Button" or "Label"));
 	Label.Text = Text;
-	Label.Font = Font;
+	Label.Font = FredokaOne
 	Label.TextSize = Size;
 	Label.BackgroundTransparency = 1;
 	Label.TextXAlignment = Enum.TextXAlignment.Left;
