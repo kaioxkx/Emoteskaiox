@@ -48,7 +48,7 @@ local function Shadow2px()
 	NewImage.SliceCenter = Rect.new(17, 17, 283, 283);
 	NewImage.Size = UDim2.fromScale(1, 1) + UDim2.fromOffset(30, 30);
 	NewImage.Position = -UDim2.fromOffset(15, 15);
-	NewImage.ImageColor3 = Color3.fromRGB(106, 43, 217);
+	NewImage.ImageColor3 = Color3.fromRGB(26, 26, 26);
 	return NewImage;
 end
 
@@ -100,12 +100,12 @@ end
 RunService:BindToRenderStep("UpdateList", 0, Update);
 
 local TitleSettings = {
-	Font = Enum.Font.FredoKaOne;
+	Font = Enum.Font.GothamSemibold;
 	Size = 14;
 }
 
 local DescriptionSettings = {
-	Font = Enum.Font.FredoKaOne;
+	Font = Enum.Font.Gotham;
 	Size = 14;
 }
 
@@ -220,7 +220,7 @@ return {
 			NewDescription.Parent = NewLabel;
 		end
 		local TimerBar = Instance.new("Frame");
-		TimerBar.BackgroundColor3 = Color3.fromRGB(200, 70, 70);
+		TimerBar.BackgroundColor3 = Color3.fromRGB(106, 43, 217);
 		TimerBar.BorderSizePixel = 0;
 		TimerBar.AnchorPoint = Vector2.new(0, 1);
 		TimerBar.Position = UDim2.new(0, 0, 1, 0);
